@@ -1,6 +1,14 @@
 # Compiled class file
 *.class
 
+.DS_Store
+.gitattributes
+.idea/
+.mvn/
+mvnw
+mvnw.cmd
+target/
+
 # Log file
 *.log
 

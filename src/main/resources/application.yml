@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: menu-order-service
+  datasource:
+      url: jdbc:postgresql://${DB_HOST:localhost}:5432/devdbeatdigi
+      username: ${db.username}
+      password: ${db.password}
+      driver-class-name: org.postgresql.Driver
+      test-while-idle: true
+      validation-query: SELECT 1
+      time-between-eviction-runs-millis: 60000
+  jpa:
+      hibernate:
+        ddl-auto: update
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      properties:
+        hibernate:
+          default_schema: menu
+
+server:
+  port: 8932
